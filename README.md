@@ -14,3 +14,51 @@
 
 [輸出例子](https://github.com/ChenTzYu/simple_crawler_for_stock_part1/blob/master/output_example.csv)
 
+
+使用方法：
+
+1.環境設置：程式用到幾個庫，分別是time,csv,requests,selenium
+
+    import time
+    import csv
+    import requests
+    from selenium import webdriver
+
+要使用selenium的webdriver還需要使用chromedriver
+[下載地址](http://chromedriver.chromium.org/downloads)
+
+安裝完成後設定chromedriver的位置
+
+    chromedriver="D:\chromedriver_win32/chromedriver"
+    driver=webdriver.Chrome(chromedriver)
+
+然後獲取所需要的網頁
+    
+    driver.get("http://www.tse.com.tw/zh/page/trading/fund/TWT38U.html")
+
+
+2.執行爬取：爬取只需要使用函數search_a_month()就可以開始
+
+    search_a_month()
+
+函數執行後會要求輸入欲查詢之年份、欲查詢之月份、及儲存路徑
+
+    請輸入欲查詢之年份(西元):
+    請輸入欲查詢之月份:
+    請輸入儲存路徑：
+
+儲存路徑包括欲儲存的檔案名稱，若該檔案不存在則會新建一個。
+以下是實際輸入的例子
+
+    請輸入欲查詢之年份(西元):
+    2018
+    請輸入欲查詢之月份:
+    6
+    請輸入儲存路徑：
+    C:/Users/user/Desktop/python pracice/stock data/output.csv
+    
+
+
+
+
+  
