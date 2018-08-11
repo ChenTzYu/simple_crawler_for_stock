@@ -12,3 +12,5 @@
     
   既然了解到外資持續買超可視為一先行指標，那下一步自然就是開始觀察哪些股票是外資持續買入的對象，而這個簡單的程式也是專門為此設計的，這個程式能夠抓取單月中每日的外資買超對象前10名，並將其股票代號、股票名稱、買超張數記錄下來。
 
+[輸出例子](https://github.com/ChenTzYu/simple_crawler_for_stock_part1/blob/master/output_example.csv)
+
